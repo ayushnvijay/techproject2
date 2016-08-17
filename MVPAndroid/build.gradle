@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext{
+    APT_VERSION = "4.1.0"
+    APP_COMPAT = "24.1.1"
+    RETROFIT_2 = "2.1.0"
+    RX_ANDROID = "1.2.1"
+    RX_JAVA = "1.1.6"
+    DAGGER = "2.5"
+    ANNOTATIONS = "1.0"
+    A_ANNOTATIONS = "4.1.0"
+    MOCKITO = "1.+"
+    JUNIT = "4.12"
+    BUTTERKNIFE = "8.2.1"
+    GOOGLE_PLAY = "9.4.0"
+}

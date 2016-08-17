@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVPAndroid</string>
+    <string name="serach_hint">Enter your place</string>
+</resources>
